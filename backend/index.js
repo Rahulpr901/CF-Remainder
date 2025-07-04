@@ -1,11 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const Student = require('./model/student'); // Import the Student model
+const Student = require("./model/student"); // Import the Student model
 
 const app = express();
 const PORT = 5000;
-
 app.use(cors());
 app.use(express.json());
 

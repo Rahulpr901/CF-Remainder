@@ -1,3 +1,4 @@
+const { CursorTimeoutMode } = require("mongodb");
 const mongoose = require("mongoose");
 
 const studentSchema = new mongoose.Schema({
@@ -5,6 +6,7 @@ const studentSchema = new mongoose.Schema({
   email: String,
   phone: String,
   handle: String,
+  CurrentRating:Number,
+  MaxRating:Number,
 });
-
 module.exports = mongoose.model("Student", studentSchema);
